@@ -8,45 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* FutureEdge Brand Colors - All in HSL */
-    --background: 210 43% 98%; /* #F7F9FC */
-    --foreground: 210 65% 11%; /* #0A1B2E */
+    /* Dark Theme - Matching Screenshot */
+    --background: 220 25% 8%; /* Very dark navy/black */
+    --foreground: 0 0% 100%; /* White text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 65% 11%;
+    --card: 220 25% 10%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 65% 11%;
+    --popover: 220 25% 10%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 218 92% 47%; /* #0B57E3 */
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 100%; /* White buttons */
+    --primary-foreground: 220 25% 8%; /* Dark text on white */
 
-    --secondary: 218 92% 96%; /* #E8F0FE */
-    --secondary-foreground: 210 65% 11%;
+    --secondary: 220 20% 20%; /* Dark gray for secondary elements */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 218 92% 96%;
-    --muted-foreground: 210 30% 50%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 0 0% 60%; /* Gray text */
 
-    --accent: 218 92% 96%;
-    --accent-foreground: 218 92% 47%;
+    --accent: 220 20% 20%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 218 40% 90%;
-    --input: 218 40% 90%;
-    --ring: 218 92% 47%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 0 0% 100%;
 
     --radius: 0.75rem;
 
     /* Gradient tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(218 92% 47%) 0%, hsl(218 92% 60%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(218 92% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 8%) 0%, hsl(220 30% 12%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(220 25% 10%) 0%, hsl(220 25% 12%) 100%);
     
     /* Shadow tokens */
-    --shadow-soft: 0 4px 20px -4px hsl(218 92% 47% / 0.1);
-    --shadow-card: 0 8px 30px -8px hsl(218 92% 47% / 0.15);
-    --shadow-hover: 0 12px 40px -10px hsl(218 92% 47% / 0.25);
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 8px 30px -8px hsl(0 0% 0% / 0.4);
+    --shadow-hover: 0 12px 40px -10px hsl(0 0% 0% / 0.5);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -59,32 +59,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 210 65% 11%;
-    --foreground: 210 43% 98%;
-    --card: 210 60% 15%;
-    --card-foreground: 210 43% 98%;
-    --popover: 210 60% 15%;
-    --popover-foreground: 210 43% 98%;
-    --primary: 218 92% 55%;
+    /* Light mode fallback (if needed) */
+    --background: 210 43% 98%;
+    --foreground: 210 65% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 65% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 65% 11%;
+    --primary: 218 92% 47%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 218 40% 25%;
-    --secondary-foreground: 210 43% 98%;
-    --muted: 218 40% 25%;
-    --muted-foreground: 210 30% 70%;
-    --accent: 218 40% 25%;
-    --accent-foreground: 218 92% 55%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 43% 98%;
-    --border: 218 30% 25%;
-    --input: 218 30% 25%;
-    --ring: 218 92% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
+    --secondary: 218 92% 96%;
+    --secondary-foreground: 210 65% 11%;
+    --muted: 218 92% 96%;
+    --muted-foreground: 210 30% 50%;
+    --accent: 218 92% 96%;
+    --accent-foreground: 218 92% 47%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 218 40% 90%;
+    --input: 218 40% 90%;
+    --ring: 218 92% 47%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
